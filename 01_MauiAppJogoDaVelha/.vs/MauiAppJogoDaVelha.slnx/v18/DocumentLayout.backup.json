@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\notefatec\\Desktop\\MauiAppJogoDaVelha\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AABD4142-D087-4ACF-B0B0-8F7EDE529108}|MauiAppJogoDaVelha\\MauiAppJogoDaVelha.csproj|c:\\users\\notefatec\\desktop\\mauiappjogodavelha\\mauiappjogodavelha\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AABD4142-D087-4ACF-B0B0-8F7EDE529108}|MauiAppJogoDaVelha\\MauiAppJogoDaVelha.csproj|solutionrelative:mauiappjogodavelha\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AABD4142-D087-4ACF-B0B0-8F7EDE529108}|MauiAppJogoDaVelha\\MauiAppJogoDaVelha.csproj|c:\\users\\notefatec\\desktop\\mauiappjogodavelha\\mauiappjogodavelha\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AABD4142-D087-4ACF-B0B0-8F7EDE529108}|MauiAppJogoDaVelha\\MauiAppJogoDaVelha.csproj|solutionrelative:mauiappjogodavelha\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AABD4142-D087-4ACF-B0B0-8F7EDE529108}|MauiAppJogoDaVelha\\MauiAppJogoDaVelha.csproj|c:\\users\\notefatec\\desktop\\mauiappjogodavelha\\mauiappjogodavelha\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AABD4142-D087-4ACF-B0B0-8F7EDE529108}|MauiAppJogoDaVelha\\MauiAppJogoDaVelha.csproj|solutionrelative:mauiappjogodavelha\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\notefatec\\Desktop\\MauiAppJogoDaVelha\\MauiAppJogoDaVelha\\AppShell.xaml",
+              "RelativeDocumentMoniker": "MauiAppJogoDaVelha\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\notefatec\\Desktop\\MauiAppJogoDaVelha\\MauiAppJogoDaVelha\\AppShell.xaml",
+              "RelativeToolTip": "MauiAppJogoDaVelha\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-08-17T13:42:50.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\notefatec\\Desktop\\MauiAppJogoDaVelha\\MauiAppJogoDaVelha\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MauiAppJogoDaVelha\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\notefatec\\Desktop\\MauiAppJogoDaVelha\\MauiAppJogoDaVelha\\MainPage.xaml",
+              "RelativeToolTip": "MauiAppJogoDaVelha\\MainPage.xaml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwCQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-08-17T13:14:55.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\notefatec\\Desktop\\MauiAppJogoDaVelha\\MauiAppJogoDaVelha\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MauiAppJogoDaVelha\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\notefatec\\Desktop\\MauiAppJogoDaVelha\\MauiAppJogoDaVelha\\MainPage.xaml.cs",
+              "RelativeToolTip": "MauiAppJogoDaVelha\\MainPage.xaml.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAmwJQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T13:13:28.813Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
