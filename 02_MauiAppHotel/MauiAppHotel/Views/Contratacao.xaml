@@ -38,8 +38,12 @@
             </Grid>
 
             <Border Padding="10" StrokeShape="RoundRectangle 10" BackgroundColor="Gray">
-                    <Label Text="Escolha sua suíte" TextTransform="Uppercase" FontSize="Subtitle"/>
-                    <Picker x:Name="pck_quarto" Title="Escolha sua Acomodação" TextColor="{StaticResource Primary}" ItemDisplayBinding="{Binding Descricao}"/>
+                <VerticalStackLayout>
+                    <Label Text="Escolha sua suíte" TextTransform="Uppercase" 
+                           FontSize="25"/>
+                    <Picker x:Name="pck_quarto" Title="Escolha sua Acomodação" 
+                            TextColor="{StaticResource Primary}" ItemDisplayBinding="{Binding Descricao}"/>
+                </VerticalStackLayout>
             </Border>
                 
             <Border Margin="10" Padding="10" Background="{StaticResource Gray300}">

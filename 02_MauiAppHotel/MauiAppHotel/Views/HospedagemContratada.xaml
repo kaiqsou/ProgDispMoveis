@@ -14,28 +14,49 @@
             FontSize="50"
             HorizontalTextAlignment="Center" />
 
-        <Border StrokeShape="RoundRectangle 10">
+        <Border StrokeShape="RoundRectangle 10"
+                BackgroundColor="{StaticResource Gray950}"
+                Padding="10"
+                Margin="5">
             <Grid RowDefinitions="Auto" ColumnDefinitions="*, *, *, *">
                 
                 <Label Grid.Row="0" Grid.Column="0" Text="Adultos:"></Label>
-                <Label Grid.Row="0" Grid.Column="1" Text="{Binding QntAdultos}"></Label>
+                <Label Grid.Row="0" Grid.Column="1" Text="{Binding QntdAdultos}"></Label>
 
                 <Label Grid.Row="0" Grid.Column="2" Text="Crianças:"></Label>
-                <Label Grid.Row="0" Grid.Column="3" Text="{Binding QntCriancas}"></Label>
+                <Label Grid.Row="0" Grid.Column="3" Text="{Binding QntdCriancas}"></Label>
             </Grid>
         </Border>
 
-        <Border StrokeShape="RoundRectangle 10">
+        <Border StrokeShape="RoundRectangle 10" 
+                BackgroundColor="{StaticResource Gray950}"
+                Padding="10"
+                Margin="5">
             <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *, *">
+                
                 <Label Grid.Row="0" Grid.Column="0" Text="Data Check-in:"></Label>
-                <Label Grid.Row="1" Grid.Column="0" Text="{Binding DataCheckin}"></Label>
+                <Label Grid.Row="1" Grid.Column="0" 
+                       Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy}'}"/>
 
                 <Label Grid.Row="0" Grid.Column="1" Text="Data Check-out:"></Label>
-                <Label Grid.Row="1" Grid.Column="1" Text="{Binding DataCheckout}"></Label>
+                <Label Grid.Row="1" Grid.Column="1" 
+                       Text="{Binding DataCheckout, StringFormat='{}{0:dd/MM/yyyy}'}"/>
 
                 <Label Grid.Row="0" Grid.Column="2" Text="Estadia:"></Label>
                 <Label Grid.Row="1" Grid.Column="2" Text="{Binding Estadia}"></Label>
+                
             </Grid>
+        </Border>
+
+        <Border StrokeShape="RoundRectangle 10" 
+                BackgroundColor="{StaticResource Gray950}"
+                Padding="10"
+                Margin="5">
+            <VerticalStackLayout>
+                <Label Text="Valor Total: R$"></Label>
+                <Label Text="{Binding ValorTotal, StringFormat='{}{0:c}}'}"
+                       TextColor="{StaticResource PrimaryDark}"/>
+            </VerticalStackLayout>
         </Border>
     </VerticalStackLayout>
 </ContentPage>

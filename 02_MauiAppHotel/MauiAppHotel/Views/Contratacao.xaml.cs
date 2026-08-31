@@ -39,7 +39,8 @@ public partial class Contratacao : ContentPage
         pck_quarto.ItemsSource = lista_quartos;
 
         dtpck_checkin.MinimumDate = DateTime.Now;
-	}
+        dtpck_checkout.MinimumDate = DateTime.Now.AddDays(1);
+    }
 
     private void dtpck_checkin_DateSelected(object sender, DateChangedEventArgs e)
     {
