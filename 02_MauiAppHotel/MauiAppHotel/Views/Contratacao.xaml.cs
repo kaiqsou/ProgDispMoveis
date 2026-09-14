@@ -49,18 +49,25 @@ public partial class Contratacao : ContentPage
 
     private void Button_Clicked(object sender, EventArgs e)
     {
-        Hospedagem h = new()
+        try
         {
-            QntdAdultos = Convert.ToInt16(stp_adultos.Value),
-            QntdCriancas = Convert.ToInt16(stp_criancas.Value),
-            QuartoSelecionado = (Quarto)pck_quarto.SelectedItem,
-            DataCheckIn = dtpck_checkin.Date.Value,
-            DataCheckout = dtpck_checkout.Date.Value
-        };
+            Hospedagem h = new()
+            {
+                QntdAdultos = Convert.ToInt16(stp_adultos.Value),
+                QntdCriancas = Convert.ToInt16(stp_criancas.Value),
+                QuartoSelecionado = (Quarto)pck_quarto.SelectedItem,
+                DataCheckIn = dtpck_checkin.Date,
+                DataCheckout = dtpck_checkout.Date
+            };
 
-        Navigation.PushAsync(new HospedagemContratada()
+            Navigation.PushAsync(new HospedagemContratada()
+            {
+                BindingContext = h
+            });
+        }
+        catch (Exception ex)
         {
-            BindingContext = h
-        });
+            DisplayAlertAsync("Ops", ex.Message, "OK");
+        }
     }
 }
