@@ -13,9 +13,20 @@ public partial class Login : ContentPage
 	public Login()
 	{
 		InitializeComponent();
-	}
 
-    private void Button_Clicked(object sender, EventArgs e)
+        string? usuario_logado = null;
+
+        Task.Run(async () =>
+        {
+            usuario_logado = await SecureStorage.Default.GetAsync("usuario_logado");
+
+            if(usuario_logado)
+        });
+    }
+
+
+
+    private async void Button_Clicked(object sender, EventArgs e)
     {
 		try
 		{
@@ -28,10 +39,18 @@ public partial class Login : ContentPage
 			bool encontrou = arr_usuarios.Any(i =>
 			(i.Email == dados_digitados.Email && i.Senha == dados_digitados.Senha));
 
-			if (encontrou) 
-				DisplayAlertAsync("Oba!", "Entrouuu", "OK");
+			if (encontrou)
+			{
+                await DisplayAlertAsync("Oba!", "Entrouuu", "OK");
+
+				// Fazendo a persistencia do "token" do usuário no SecureStorage
+				await SecureStorage.SetAsync("usuario_logado", dados_digitados.Email);
+
+				// Trocando a tela inicial, raiz, do app
+				App.Current.MainPage = new Protegido();
+            }
 			else           
-				DisplayAlertAsync("Ops!", "Usuário ou Senha incorretos.", "OK");
+				await DisplayAlertAsync("Ops!", "Usuário ou Senha incorretos.", "OK");
 		}
 		catch (Exception ex)
 		{

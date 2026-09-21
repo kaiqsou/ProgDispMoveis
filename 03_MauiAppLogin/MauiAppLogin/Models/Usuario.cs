@@ -6,7 +6,10 @@ namespace MauiAppLogin.Models
 {
     public class Usuario
     {
+        // Campos
         string? nome, email, senha;
+
+        // Propriedades
         public string? Nome
         {
             get => nome;
