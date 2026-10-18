@@ -17,27 +17,33 @@
         <Label Text="Cálculo da Diária" FontFamily="TheBandit" Margin="0, 30, 0, 30" FontSize="25"></Label>
         
         <!-- Container das Pessoas e Quartos -->
-        <Border Padding="10" BackgroundColor="LightGray">
+        <Border Padding="10" BackgroundColor="{StaticResource White}">
             <VerticalStackLayout Padding="10">
             <Grid ColumnDefinitions="*, *, *" RowDefinitions="Auto, Auto" RowSpacing="5" Margin="5">
-                <Label Grid.Row="0" Grid.Column="0" Text="Adultos:" TextColor="Black"/>
-                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Value}" TextColor="Black"
+                <Label Grid.Row="0" Grid.Column="0" Text="Adultos:"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Value}"
                        BindingContext="{x:Reference stp_adultos}"/>
-                <Stepper Grid.Row="0" Grid.Column="2" x:Name="stp_adultos"
+                <Border Grid.Row="0" Grid.Column="2" Padding="0" StrokeThickness="0"
+                        StrokeShape="RoundRectangle 8" BackgroundColor="{StaticResource Primary}">
+                <Stepper x:Name="stp_adultos"
+                         BackgroundColor="{StaticResource Primary}"
                          Minimum="0" Maximum="10" Increment="1"/>
-
-                
+                </Border>
             </Grid>
                 
             <Grid ColumnDefinitions="*, *, *" RowDefinitions="Auto, Auto" RowSpacing="5" Margin="5">
-                <Label Grid.Row="0" Grid.Column="0" Text="Crianças:" TextColor="Black"/>
-                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Value}" TextColor="Black"
+                <Label Grid.Row="0" Grid.Column="0" Text="Crianças:"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Value}"
                         BindingContext="{x:Reference stp_criancas}"/>
-                <Stepper Grid.Row="0" Grid.Column="2" x:Name="stp_criancas"
-                        Minimum="0" Maximum="10" Increment="1"/>
+                <Border Grid.Row="0" Grid.Column="2" Padding="0" StrokeThickness="0"
+                        StrokeShape="RoundRectangle 8" BackgroundColor="{StaticResource Primary}">
+                <Stepper x:Name="stp_criancas"
+                         BackgroundColor="{StaticResource Primary}"
+                         Minimum="0" Maximum="10" Increment="1"/>
+                </Border>
             </Grid>
 
-            <Border Padding="10" StrokeShape="RoundRectangle 10" BackgroundColor="Gray">
+            <Border Padding="10" StrokeShape="RoundRectangle 10" BackgroundColor="{StaticResource Secondary}">
                 <VerticalStackLayout>
                     <Label Text="Escolha sua suíte" TextTransform="Uppercase" 
                            FontSize="25"/>
@@ -46,7 +52,7 @@
                 </VerticalStackLayout>
             </Border>
                 
-            <Border Margin="10" Padding="10" Background="{StaticResource Gray300}">
+            <Border Margin="10" Padding="10" Background="{StaticResource Gray200}">
                 <VerticalStackLayout>
                         <Label Text="Período de Estadia" TextTransform="Uppercase"/>
                         <Grid ColumnDefinitions="Auto, Auto" RowDefinitions="Auto, *">

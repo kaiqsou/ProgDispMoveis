@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel2.Views.HospedagemContratada"
+             BackgroundColor="{StaticResource Gray100}">
+
+    <VerticalStackLayout>
+        <!--- Exibe o nome do quarto selecionado na hospedagem -->
+        <Label Text="{Binding QuartoSelecionado.Descricao}" TextColor="{StaticResource Primary}" FontFamily="LavishlyYours" FontSize="50"
+               HorizontalTextAlignment="Center"/>
+
+        <Border StrokeShape="RoundRectangle 10" BackgroundColor="{StaticResource Gray950}" Padding="10" Margin="5">
+            <Grid RowDefinitions="Auto" ColumnDefinitions="*, *, *, *">
+                <!--- Exibe a quantidade de adultos da hospedagem -->
+                <Label Grid.Row="0" Grid.Column="0" Text="Adultos:"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="{Binding QtdAdultos}"/>
+
+                <!--- Exibe a quantidade de crianças da hospedagem -->
+                <Label Grid.Row="0" Grid.Column="2" Text="Crianças:"/>
+                <Label Grid.Row="0" Grid.Column="3" Text="{Binding QtdCriancas}"/>
+            </Grid>
+        </Border>
+
+        <Border StrokeShape="RoundRectangle 10" BackgroundColor="{StaticResource Gray950}" Padding="10" Margin="5">
+            <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *, *">
+                <!--- Exibe a data de check-in da hospedagem -->
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy'}"/>
+
+                <!--- Exibe a data de check-out da hospedagem -->
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding DataCheckOut, StringFormat='{}{0:dd/MM/yyyy'}"/>
+
+                <!--- Exibe a quantidade de dias da hospedagem -->
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="{Binding Estadia}"/>
+            </Grid>
+        </Border>
+
+        <Border StrokeShape="RoundRectangle 10" BackgroundColor="{StaticResource Gray950}" Padding="10" Margin="5">
+            <VerticalStackLayout>
+                <!--- Exibe o valor total da hospedagem -->
+                <Label Text="Valor Total:"/>
+                <Label Text="{Binding ValorTotal, StringFormat='{} {0:C}'}" TextColor="{StaticResource PrimaryDark}"/>
+            </VerticalStackLayout>
+        </Border>
+
+    </VerticalStackLayout>
+</ContentPage>

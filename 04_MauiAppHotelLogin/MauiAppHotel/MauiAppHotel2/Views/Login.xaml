@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel2.Views.Login"
+             Title="Login">
+    <VerticalStackLayout Margin="10" Spacing="10" VerticalOptions="Center">
+        <Label Text="Faça o Login" FontSize="Title"/>
+
+        <!-- Campos para preencher o e-mail -->
+        <Label Text="Email:"/>
+        <Entry x:Name="txt_email" Keyboard="Email"/>
+
+        <!-- Campos para preencher a senha -->
+        <Label Text="Senha:"/>
+        <Entry x:Name="txt_senha" Keyboard="Password"/>
+
+        <!-- Botões (Para entrar e se cadastrar -->
+        <Button Text="Entrar" Clicked="Button_Clicked"/>
+
+        <Button Text="Não tem conta? Cadastre-se" Clicked="BtnIrParaCadastro_Clicked" BackgroundColor="Transparent" TextColor="{StaticResource Primary}"/>
+    </VerticalStackLayout>
+</ContentPage>

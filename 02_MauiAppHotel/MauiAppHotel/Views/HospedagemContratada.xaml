@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.HospedagemContratada"
-             Title="HospedagemContratada"
+             Title="Detalhes da Hospedagem"
              BackgroundColor="{StaticResource Gray100}">
     
     <VerticalStackLayout>
@@ -14,10 +14,7 @@
             FontSize="50"
             HorizontalTextAlignment="Center" />
 
-        <Border StrokeShape="RoundRectangle 10"
-                BackgroundColor="{StaticResource Gray950}"
-                Padding="10"
-                Margin="5">
+        <Border StrokeShape="RoundRectangle 10" BackgroundColor="{StaticResource White}" Padding="10" Margin="5">
             <Grid RowDefinitions="Auto" ColumnDefinitions="*, *, *, *">
                 
                 <Label Grid.Row="0" Grid.Column="0" Text="Adultos:"></Label>
@@ -29,7 +26,7 @@
         </Border>
 
         <Border StrokeShape="RoundRectangle 10" 
-                BackgroundColor="{StaticResource Gray950}"
+                BackgroundColor="{StaticResource White}"
                 Padding="10"
                 Margin="5">
             <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *, *">
@@ -49,13 +46,13 @@
         </Border>
 
         <Border StrokeShape="RoundRectangle 10" 
-                BackgroundColor="{StaticResource Gray950}"
+                BackgroundColor="{StaticResource White}"
                 Padding="10"
                 Margin="5">
             <VerticalStackLayout>
                 <Label Text="Valor Total: R$"></Label>
                 <Label Text="{Binding ValorTotal, StringFormat='{}{0:c}}'}"
-                       TextColor="{StaticResource PrimaryDark}"/>
+                       TextColor="{StaticResource Primary}"/>
             </VerticalStackLayout>
         </Border>
     </VerticalStackLayout>
